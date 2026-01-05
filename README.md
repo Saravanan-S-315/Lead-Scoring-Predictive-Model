@@ -57,5 +57,5 @@ We used multiple metrics to ensure the model's robustness:
 1. Clone the repository:
    
    ```bash
-   git clone [https://github.com/Saravanan-S-315/Lead-Scoring-Case-Study.git](https://github.com/Saravanan-S-315/Lead-Scoring-Case-Study.git)
+   git clone [https://github.com/Saravanan-S-315/Lead-Scoring-Case-Study.git]
    cd Lead-Scoring-Case-Study

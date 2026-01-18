@@ -66,7 +66,7 @@ leads = leads[~pd.isnull(leads["Page Views Per Visit"])]
 
 
 # ======================================
-# 4. EDA (OPTIONAL BUT INTERVIEW-READY)
+# 4. EDA
 # ======================================
 cat_cols = list(leads.select_dtypes(include='object'))
 for col in cat_cols:

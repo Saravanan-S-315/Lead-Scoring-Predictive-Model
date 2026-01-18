@@ -64,31 +64,6 @@ leads.drop(columns=cols_to_drop_2, inplace=True)
 leads = leads[~pd.isnull(leads["TotalVisits"])]
 leads = leads[~pd.isnull(leads["Page Views Per Visit"])]
 
-
-# ======================================
-# 4. EDA
-# ======================================
-cat_cols = list(leads.select_dtypes(include='object'))
-for col in cat_cols:
-    plt.figure(figsize=(18, 6))
-    sns.countplot(x=col, hue="Converted", data=leads)
-    plt.xticks(rotation=90)
-    plt.show()
-
-num_cols = [
-    "TotalVisits",
-    "Total Time Spent on Website",
-    "Page Views Per Visit"
-]
-
-sns.pairplot(leads[num_cols])
-plt.show()
-
-plt.figure(figsize=(10, 6))
-sns.heatmap(leads[num_cols].corr(), annot=True, cmap="BuPu")
-plt.show()
-
-
 # ======================================
 # 5. DATA PREPARATION
 # ======================================
